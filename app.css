@@ -58,3 +58,7 @@ input[type='button']{
   border-radius: 9999px;
   padding: 5px 15px;
 }
+
+.todo.done{
+  text-decoration: line-through;
+}
