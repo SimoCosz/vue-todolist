@@ -10,7 +10,13 @@ ul, li{
 }
 
 body{
-  background-color: #4EFFE5;
+  background-color: #333;
+}
+
+.main-container{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .input-wrapper{
@@ -19,7 +25,10 @@ body{
   align-items: center;
   gap: 20px;
   padding: 15px;
-  background-color: rgba(250, 110, 50, 1);
+  background-color: #cecece;
+  border: 2px solid lime;
+  border-radius: 999px;
+  box-shadow: 2px 2px 10px white;
 }
 
 input{
@@ -41,7 +50,7 @@ input[type='button']{
   padding: 20px;
 }
 
-.todo-list{
+.item-list{
   max-width: 400px;
   margin: 0 auto;
   display: flex;
@@ -49,16 +58,19 @@ input[type='button']{
   gap: 10px;
 }
 
-.todo{
+.item{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  border: 2px solid rgba(250, 110, 50, 1);
+  border: 2px solid lime;
   border-radius: 9999px;
   padding: 5px 15px;
+  box-shadow: 2px 2px 10px white;
+  background-color: #cecece;
 }
 
-.todo > .done{
+.item > .done{
   text-decoration: line-through;
 }
+
