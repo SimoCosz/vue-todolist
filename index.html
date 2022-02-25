@@ -13,8 +13,8 @@
 <body>
   <div id="app">
     <div class="input-wrapper">
-      <input type="text">
-      <input type="button" value="Add">
+      <input type="text" v-model='newItem' @keyUp.enter='addItem(newItem)'>
+      <input type="button" value="Add" @click='addItem(newItem)'>
     </div>
 
     <div class="list-wrapper">
