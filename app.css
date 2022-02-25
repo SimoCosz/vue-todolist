@@ -59,6 +59,6 @@ input[type='button']{
   padding: 5px 15px;
 }
 
-.todo.done{
+.todo > .done{
   text-decoration: line-through;
 }

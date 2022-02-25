@@ -19,9 +19,11 @@
 
     <div class="list-wrapper">
       <ul class="todo-list">
-        <li class="todo" v-for='(item, i) in listItem' @click='changeDone(item)' :class="item.done == true? 'done' : ' ' " >
-          {{item.text}}
-          <i class="fa-solid fa-xmark" @click='deleteTodo(i)'></i>
+        <li class="todo" v-for='(item, i) in listItem' >
+          <div class="text" @click='changeDone(item)' :class="item.done == true? 'done' : ' ' " >
+            {{item.text}}
+          </div>
+          <i class="fa-solid fa-xmark" @click='deleteItem(i)'></i>
         </li>
       </ul>
     </div>

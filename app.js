@@ -22,6 +22,10 @@ const app = new Vue({
     changeDone: function(item){
       item.done = true
       console.log('click')
+    },
+    
+    deleteItem: function(i){
+      this.listItem.splice(i, 1)
     }
   }
 })
