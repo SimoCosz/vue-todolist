@@ -26,8 +26,8 @@
               {{item.text}}
             </div>
             <div class="check">
-              <input type="checkbox" @click='changeDone(item)' :class="item.done == true? 'done' : ' ' ">
-              <i class="fa-solid fa-xmark" @click='deleteItem(i)'></i>
+              <i class="fa-solid fa-circle-check" @click='changeDone(item)' :class="item.done == true? 'done' : ' ' "></i>
+              <i class="fa-solid fa-trash" @click='deleteItem(i)'></i>
             </div>
           </li>
         </ul>
