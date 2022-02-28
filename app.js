@@ -21,11 +21,11 @@ const app = new Vue({
   },
 
   methods: {
-    changeDone: function(item){
+    changeDoneTrue: function(item){
       item.done = true;
       console.log('click');
     },
-    
+
     deleteItem: function(i){
       this.listItem.splice(i, 1);
     },

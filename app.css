@@ -17,7 +17,6 @@ body{
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  margin-top: 20px;
   background-image: url(https://wallpapercave.com/wp/wp8991907.jpg);
   background-position: center;
   background-size: cover;
@@ -50,6 +49,14 @@ input[type='button']{
 
 .list-wrapper{
   padding: 20px;
+  background-color: rgba(250, 250, 250, 0.5);
+  border: 2px solid white;
+  width: 600px;
+  max-height: 500px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px black;
+  overflow: auto;    
 }
 
 .item-list{
@@ -67,13 +74,13 @@ input[type='button']{
   gap: 15px;
   border-radius: 10px;
   padding: 5px 15px;
-  box-shadow: 3px 3px 5px white;
+  box-shadow: 0px 2px 0px white;
   border: 2px solid transparent;
-  background-color: rgba(253,248,150,0.5);
 }
 
 .item > .done{
   text-decoration: line-through;
+  opacity: 0.4;
 }
 
 input[type='checkbox']{

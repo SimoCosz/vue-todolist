@@ -22,11 +22,11 @@
       <div class="list-wrapper">
         <ul class="item-list">
           <li class="item" v-for='(item, i) in listItem' >
-            <div class="text" @click='changeDone(item)' :class="item.done == true? 'done' : ' ' " >
+            <div class="text" @click='changeDoneTrue(item)' :class="item.done == true? 'done' : ' ' " >
               {{item.text}}
             </div>
             <div class="check">
-              <i class="fa-solid fa-circle-check" @click='changeDone(item)' :class="item.done == true? 'done' : ' ' "></i>
+              <i class="fa-solid fa-circle-check" @click='changeDoneTrue(item)' :class="item.done == true? 'done' : ' ' "></i>
               <i class="fa-solid fa-trash" @click='deleteItem(i)'></i>
             </div>
           </li>
